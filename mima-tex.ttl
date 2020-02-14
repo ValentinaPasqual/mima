@@ -1,8 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vir: <http://w3id.org/vir#> . 
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> . 
+@prefix mimatex: <https://github.com/ValentinaPasqual/mima/edit/master/mima-tex.ttl#> . 
+
+<https://github.com/ValentinaPasqual/mima/edit/master/mima-tex.ttl#> 
+                        rdf:type owl:Ontology ;
+                        dc:creator "Valentina Pasqual" ;
+                        dc:date "2020-02-14" ;
+                        dc:description ""@en ;
+                        dc:title "CRMTex RDF VERSION for testing data mima - Multi-Interpretation model on Manuscript visual Apparatus"@en ;
+                        vann:preferredNamespacePrefix "mimatex" ;
+                        vann:preferredNamespaceUri "https://github.com/ValentinaPasqual/mima/edit/master/mima_ontology.ttl#" ;
+                        owl:versionInfo "1.0" .
+
+
 ########################################################################################################################
 #################################################### CLASSES ###########################################################
 ########################################################################################################################
 
-mima:TX1_Written_Text a owl:Class ; 
+mimatex:TX1_Written_Text a owl:Class ; 
     rdfs:subClassOf crm:E25_Man-Made_Feature ;
     rdfs:comment """Subclass of TX1 Written Text intended to identify portions of text considered to be
 of particular significance by scholars, as witnesses of a certain meaning or bearers of
@@ -17,22 +38,22 @@ a written text (TX1) and its components is documented through the TXP4 is
 constituted by property."""@en ;
     rdfs:label "Written Text" .
 
-mima:TX7_Written_Text_Fragment a owl:Class ; 
-    rdfs:subClassOf mima:TX1_Written_Text ;
+mimatex:TX7_Written_Text_Fragment a owl:Class ; 
+    rdfs:subClassOf mimatex:TX1_Written_Text ;
     rdfs:comment """Subclass of E25 Man-Made Feature intended to describe a particular feature (i.e., set
 of glyphs) created (i.e., written) on various kinds of support, having semiotic
 significance and the declared purpose of conveying a specific message towards a
 given recipient or group of recipients."""@en ;
     rdfs:label "Written Text Fragment" .
 
-mima:TX2_Writing a owl:Class ;
+mimatex:TX2_Writing a owl:Class ;
     rdfs:subClassOf crm:E12_Production ;
     rdfs:comment """Subclass of E12 Production indicating the activity of creating textual entities using
 various techniques (painting, sculpture, etc.) and by means of specific tools on a
 given physical carrier in a non-mechanical way."""@en ;
     rdfs:label "Writing" .
 
-mima:TX3_Writing_System a owl:Class ;
+mimatex:TX3_Writing_System a owl:Class ;
     rdfs:subClassOf crm:E29_Design_or_Procedure ;
     rdfs:comment """Subclass of E29 Design or Procedure refers to a conventional system consisting of a
 set of signs (graphemes, E90) used to codify a natural language. A writing system
@@ -46,10 +67,10 @@ to produce a TX1 Written Text during a TX2 Writing event."""@en ;
 ############################################## OBJECT PROPERTIES #######################################################
 ########################################################################################################################
 
-mima:TXP1_used_writing_system a owl:ObjectProperty ;
-    rdfs:domain mima:TX2_Writing ;
+mimatex:TXP1_used_writing_system a owl:ObjectProperty ;
+    rdfs:domain mimatex:TX2_Writing ;
     rdfs:comment """This property is intended to identify the specific instance of TX3 Writing System
 employed during the writing event that led to the creation of a TX1 Written Text."""@en ;
     rdfs:label "used writing system" ;
-    rdfs:range mima:TX3_Writing_System ;
-    owl:inverseOf mima:TXP1_writing_system_used_for . 
+    rdfs:range mimatex:TX3_Writing_System ;
+    owl:inverseOf mimatex:TXP1_writing_system_used_for . 
