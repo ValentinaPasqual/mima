@@ -8,13 +8,20 @@ WHERE {
         crm:P46_is_composed_of ?page . 
     ?page ?property ?recto_or_verso .
     ?recto_or_verso ?property2 ?fragment 
-}```
+} 
+```
 
 Results: 
 
-```hf:Carta_HF_I_12v_13r```
-```hf.Carta_HF_I_44v_45r```
-```hf:HF_I_incipit_title-frag```
-```hf:HF_I_incipit_illustration```
-```hf:Carta_HF_IV_20v_21r```
-```hf:Illustrazione_X```
+```hf:Carta_HF_I_12v_13r
+```
+```hf.Carta_HF_I_44v_45r
+```
+```hf:HF_I_incipit_title-frag
+```
+```hf:HF_I_incipit_illustration
+```
+```hf:Carta_HF_IV_20v_21r
+```
+```hf:Illustrazione_X
+```
