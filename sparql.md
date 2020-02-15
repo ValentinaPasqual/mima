@@ -1,4 +1,4 @@
-#Query 1 
+## Query 1 
 
 NL: "Which are all the fragments (both visual and textual) present in the dataset?"
 
@@ -19,4 +19,23 @@ hf:HF_I_incipit_title-frag
 hf:HF_I_incipit_illustration
 hf:Carta_HF_IV_20v_21r
 hf:Illustrazione_X
+```
+
+## Query 2 
+
+NL: "Quali sono i frammenti visuali che sono stati realizzati su più di un folio?"
+
+``` SELECT DISTINCT ?illustration
+WHERE {
+    ?illustration a vir:IC1_Iconographic_Atom . 
+    ?recto crm:P56_bears_feature ?illustration . 
+    ?verso crm:P56_bears_feature ?illustration .    
+}
+```
+
+Results: 
+
+```hf:Carta_HF_I_12v_13r
+hf:Carta_HF_IV_20v_21r
+hf:Carta_HF_I_44v_45r
 ```
