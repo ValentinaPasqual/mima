@@ -1,5 +1,5 @@
 # MIMA
-## Multi-Interpretations model on Manuscript visual Apparatus
+## Multi-disciplinary Interpretations model on Manuscript Apparatus
 
 MIMA reuses the following ontologies: 
 
