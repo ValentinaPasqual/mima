@@ -39,3 +39,9 @@ Results:
 hf:Carta_HF_IV_20v_21r
 hf:Carta_HF_I_44v_45r
 ```
+
+## Level 1
+
+## Query 3 
+
+NL: "Quali sono tutte le influenze (fisiche e concettuali) dell'illustrazione X?"
