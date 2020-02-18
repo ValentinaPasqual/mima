@@ -46,6 +46,29 @@ hf:Carta_HF_I_44v_45r
 
 NL: "Quali sono tutte le influenze (fisiche e concettuali) dell'illustrazione X?"
 
+```SELECT ?icon_atom ?influence ?source
+WHERE { 
+    
+    ?manuscript crm:P46_is_composed_of ?icon_atom ; 
+        dcterms:title ?HF . 
+    ?icon_atom a vir:IC1_Iconographic_Atom .
+    
+    {  
+    ?icon_atom vir:K1_denotes ?representation . 
+    ?representation a vir:IC9_Representation .
+    ?creation crm:P94_has_created ?representation . 
+    ?creation crm:P15_was_influenced_by  ?influence . }
+    
+    UNION 
+    
+    { ?icon_atom a oaentry:CopyorDerivation ; 
+        oaentry:isConceivedByMeansOf ?source . }
+        
+FILTER regex(?HF, "historiae ferrariae", "i")
+
+}
+```
+
 ## Query 4 
 
 NL: "tutti gli eventi di produzione in cui PP è coinvolto"
