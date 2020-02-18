@@ -46,7 +46,7 @@ hf:Carta_HF_I_44v_45r
 
 NL: "Quali sono tutte le influenze (fisiche e concettuali) dell'illustrazione X?"
 
-# Query 4 
+## Query 4 
 
 NL: "tutti gli eventi di produzione in cui PP è coinvolto"
 
