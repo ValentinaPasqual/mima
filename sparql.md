@@ -48,7 +48,7 @@ NL: "Quali sono tutte le influenze (fisiche e concettuali) dell'illustrazione X?
 
 # Query 4 
 
-NL: "tutti gli eventi in cui PP è coinvolto"
+NL: "tutti gli eventi di produzione in cui PP è coinvolto"
 
 ``` SELECT ?event ?artefact 
 WHERE {
