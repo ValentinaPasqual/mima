@@ -45,6 +45,7 @@ hf:Carta_HF_I_44v_45r
 ## Query 3 
 
 NL: "Quali sono tutte le influenze (fisiche e concettuali) dell'illustrazione X appartenente alle HF?"
+NB: mostra tutte le illustrazioni con tutte le influenze
 
 ```SELECT ?icon_atom ?influence ?source
 WHERE { 
