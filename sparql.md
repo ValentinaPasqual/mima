@@ -57,4 +57,5 @@ WHERE {
     ?event crm:P14_carried_out_by ?prisciani . 
     ?prisciani rdfs:label ?string .  
 FILTER regex(?string, "pellegrino prisciani", "i")
-}``` 
+}
+``` 
