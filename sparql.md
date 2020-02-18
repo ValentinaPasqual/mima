@@ -45,3 +45,7 @@ hf:Carta_HF_I_44v_45r
 ## Query 3 
 
 NL: "Quali sono tutte le influenze (fisiche e concettuali) dell'illustrazione X?"
+
+# Query 4 
+
+NL: "tutti gli eventi in cui PP è coinvolto"
