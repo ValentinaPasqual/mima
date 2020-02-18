@@ -1,0 +1,338 @@
+@prefix hf: <urlgithub#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vir: <http://w3id.org/vir#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix hico: <http://purl.org/emmedi/hico/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix oaentry: <http://purl.org/emmedi/oaentry/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix mima: <https://github.com/ValentinaPasqual/mima/edit/master/mima_ontology.ttl#> . 
+@prefix mimatex: <https://github.com/ValentinaPasqual/mima/edit/master/mima-tex.ttl#> .
+#cwrc
+
+
+
+
+
+# GRAFO NOMINTATO 0
+
+# TIME - SPANS 
+
+hf:XII-XIII_secAC a crm:E52_Time-Span . 
+hf:XII-XIII_secAC a crm:E52_Time-Span .
+hf:april_december_1495 a crm:E52_Time-Span .
+hf:september_1494 a crm:E52_Time-Span .
+
+#Carta d'identità di Pelle
+
+hf:Person_PP a crm:E21_Person;
+    owl:sameAs <http://viaf.org/viaf/92371881>;
+    rdfs:label "Pellegrino Prisciani".
+
+hf:Person_GBGuarini a crm:E21_Person; 
+    owl:sameAs <http://viaf.org/viaf/54142932>;
+    rdfs:label "Gian Battista Guarini".
+
+hf:Person_Tolomeo a crm:E21_Person;
+    owl:sameAs <http://viaf.org/viaf/54152998>;
+    rdfs:label "Claudio Tolomeo".
+
+hf:Person_LC a crm:E21_Person;
+    owl:sameAs <http://viaf.org/viaf/92317476>;
+    rdfs:label "Loredana Chines".
+
+hf:person_Konrad_Peutinger a crm:E21_Person; 
+    owl:sameAs <http://viaf.org/viaf/56776766>; 
+    rdfs:label "Konrad Peutinger".
+
+hf:person_Konrad_Celtis a crm:E21_Person;
+    owl:sameAs <http://viaf.org/viaf/64142723>; 
+    rdfs:label "Konrad Celtis".
+
+hf:Person_VP a crm:E21_Person;
+    rdfs:label "Valentina Pasqual".
+
+hf:person_Ercole_I_d_Este a crm:E21_Person;
+    owl:sameAs <http://viaf.org/viaf/50035133>; 
+    rdfs:label "Ercole I d'Este" . 
+
+hf:Person_BdaN a crm:E21_Person ; 
+    owl:sameAs <http://viaf.org/viaf/96158817>;
+    rdfs:label "Bartolino da Novara" .
+
+hf:Person_MF a crm:E21_Person ; 
+    owl:sameAs <http://viaf.org/viaf/74072974> ;
+    rdfs:label "Marco Folin" .
+
+hf:Person_Unknown_Scribe1 a crm:E21_Person ; 
+    rdfs:label "Unknown Scribe"@en . 
+
+crm:Group_Romans a crm:E74_Group ; 
+    rdfs:label "Romans"@en . 
+
+
+# Metadati strettamente al manoscritto fisico
+
+hf:Manuscript_C_HF a crm:E28_Conceptual_Object . 
+hf:Manuscript_C_HF a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_C_HF . #??? 
+
+
+hf:Manuscript_HF_I a crm:E22_Man-Made_Object ;
+        dcterms:title "Historiae Ferrariae I" ; 
+    crm:P128_carries hf:Manuscript_HF_I_C . 
+hf:Manuscript_HF_I_C a crm:E28_Conceptual_Object .
+hf:Production_HF_I a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_I . 
+hf:Creation_HF_I a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_I_C . 
+
+hf:Manuscript_HF_IV a crm:E22_Man-Made_Object ;
+    dcterms:title "Historiae Ferrariae IV" ; 
+    crm:P128_carries hf:Manuscript_HF_IV_C . 
+hf:Manuscript_HF_IV_C a crm:E28_Conceptual_Object .
+hf:Production_HF_IV a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_IV . 
+hf:Creation_HF_IV a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_IV_C . 
+
+hf:Manuscript_HF_VII a crm:E22_Man-Made_Object ;
+    dcterms:title "Historiae Ferrariae VII" ; 
+    crm:P128_carries hf:Manuscript_HF_VII_C . 
+hf:Manuscript_HF_vII_C a crm:E28_Conceptual_Object .
+hf:Production_HF_VII a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_VII . 
+hf:Creation_HF_VII a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_VII_C . 
+
+hf:Manuscript_HF_VIII a crm:E22_Man-Made_Object ;
+    dcterms:title "Historiae Ferrariae VIII" ; 
+    crm:P128_carries hf:Manuscript_HF_VIII_C . 
+hf:Manuscript_HF_VIII_C a crm:E28_Conceptual_Object .
+hf:Production_HF_VIII a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_VIII . 
+hf:Creation_HF_VIII a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_VIII_C . 
+
+hf:Manuscript_HF_IX a crm:E22_Man-Made_Object ;
+    dcterms:title "Historiae Ferrariae IX" ; 
+    crm:P128_carries hf:Manuscript_HF_IX_C . 
+hf:Manuscript_HF_IX_C a crm:E28_Conceptual_Object .
+hf:Production_HF_IX a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_IX . 
+hf:Creation_HF_IX a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_IX_C . 
+
+hf:Manuscript_HF_Y a crm:E22_Man-Made_Object ;
+    dcterms:title "Historiae Ferrariae Y" ; 
+    crm:P128_carries hf:Manuscript_HF_Y_C . 
+hf:Manuscript_HF_Y_C a crm:E28_Conceptual_Object .
+hf:Production_HF_Y a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_Y . 
+hf:Creation_HF_Y a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_Y_C . 
+
+# le fonti del manoscritto HF 
+#hf:Manuscript_HF crm:P15_was_influenced_by buh
+#    Sabellico (1436-1506 autore di una soria di Venezia)
+ #   Chronica Parva Ferrariensis di Riccobaldo (1246-1320)
+  #  Antichità giudaiche di Giuseppe Flavio
+   # Livio, Tacito e Giustino, tra i poeti Virgilio, Lucano, Seneca, Marziale
+    #Esiodo, Mercurio Trismegisto, Erodiano, le Storie di Dione Cassio. 
+    #testi cristiani, storici medievali e moderni, cronache e annali modenesi, epigrafi commemorative e moltissimi testi geografici e giuridici
+
+# Dove si trova la carta 1 nel manoscritto
+
+hf:Manuscript_HF_I crm:P46_is_composed_of hf:HF_I_Pag12 ;
+    crm:P46_is_composed_of hf:HF_I_Pag1 ; 
+    crm:P46_is_composed_of hf:Carta_HF_I_12v_13r .
+hf:HF_I_Pag12 crm:P56_bears_feature hf:HF_I_Pag12v .  
+hf:HF_I_Pag13 crm:P56_bears_feature hf:HF_I_Pag13r .
+hf:HF_I_Pag12v crm:P56_bears_feature hf:Carta_HF_I_12v_13r ;
+    a vir:IC20_Verso . 
+hf:HF_I_Pag13r crm:P56_bears_feature hf:Carta_HF_I_12v_13r; 
+    a vir:IC19_Recto .
+hf:Carta_HF_I_12v_13r a vir:IC1_Iconographic_Atom . 
+
+#Dove si trova la carta 2 nel manoscritto
+
+hf:Manuscript_HF_I crm:P46_is_composed_of hf:HF_I_Pag44;
+    crm:P46_is_composed_of hf:HF_I_Pag45; 
+    crm:P46_is_composed_of hf:Carta_HF_I_44v_45r .
+hf:HF_I_Pag44 crm:P56_bears_feature hf:HF_I_Pag44v.
+hf:HF_I_Pag45 crm:P56_bears_feature hf:HF_I_Pag45r. 
+hf:HF_I_Pag44v crm:P56_bears_feature hf:Carta_HF_I_44v_45r ; 
+    a vir:IC20_Verso . 
+hf:HF_I_Pag45r crm:P56_bears_feature hf:Carta_HF_I_44v_45r ; 
+    a vir:IC19_Recto .
+hf:Carta_HF_I_44v_45r a vir:IC1_Iconographic_Atom ;
+    a oaentry:CopyorDerivation . 
+
+#Dove si trova la carta 3 nel manoscritto
+
+hf:Manuscript_HF_IV crm:P46_is_composed_of hf:HF_IV_Pag20;
+    crm:P46_is_composed_of hf:HF_IV_Pag21; 
+    crm:P46_is_composed_of hf:Carta_HF_IV_20v_21r . 
+hf:HF_IV_Pag20 crm:P56_bears_feature hf:HF_IV_Pag20v.
+hf:HF_IV_Pag21 crm:P56_bears_feature hf:HF_IV_Pag21r. 
+hf:HF_IV_Pag20v crm:P56_bears_feature hf:Carta_HF_IV_20v_21r;
+    a vir:IC20_Verso . 
+hf:HF_IV_Pag21r crm:P56_bears_feature hf:Carta_HF_IV_20v_21r;
+    a vir:IC19_Recto . 
+hf:Carta_HF_IV_20v_21r a vir:IC1_Iconographic_Atom ; 
+    rdfs:title "Proportionabilis et commensurata designatio urbis Ferrariae suburbiorumque et continentium aedificiorum priora etiam tempora respiciens"@la . 
+
+#Dove si trova il proemio nel manoscritto
+
+hf:Manuscript_HF_I crm:P46_is_composed_of hf:HF_I_incipit_Pag ; 
+    crm:P46_is_composed_of hf:HF_I_incipit_title-frag ;
+    crm:P46_is_composed_of hf:HF_I_incipit_illustration .
+hf:HF_I_incipit_Pag crm:P56_bears_feature hf:HF_I_incipit_Pag_r . 
+hf:HF_I_incipit_Pag_r crm:P56_bears_feature hf:HF_I_incipit_title-frag ;
+    crm:P56_bears_feature hf:HF_I_incipit_illustration ;
+    a vir:IC19_Recto . 
+hf:HF_I_incipit_title-frag a mimatex:TX7_Textual_Fragment . 
+hf:HF_I_incipit_illustration a vir:IC1_Iconogrpahical_Atom .
+
+# Dove si trova l'illustrazione X (in un'unica pagina)
+
+hf:Manuscript_HF_Y crm:P46_is_composed_of hf:HF_Y_PagX ;
+    crm:P46_is_composed_of hf:Illustrazione_X .
+hf:HF_Y_PagX crm:P56_bears_feature hf:HF_Y_PagXr .
+hf:HF_Y_PagX crm:P56_bears_feature hf:HF_Y_PagXv . 
+hf:HF_Y_PagXv crm:P56_bears_feature hf:Illustrazione_X ;
+    a vir:IC20_Verso . 
+hf:HF_Y_PagXr a vir:IC19_Recto . 
+hf:Illustrazione_X a vir:IC1_Iconogrpahical_Atom . 
+
+# misurazioni 
+
+hf:misurazioni_BdN a crm:E28_Conceptual_Object . 
+hf:misurazioni_PP a crm:E28_Conceptual_Object . 
+
+# Tavole Peutingeriane
+ 
+hf:Tabula_Peutingeriana_2 a vir:IC1_Iconographic_Atom ;
+    a oaentry:CopyorDerivation ; 
+    dcterms:title "Tabula Peutingeriana XII-XIII sec" . 
+
+hf:Tabula_Peutingeriana_1 a vir:IC1_Iconographic_Atom ;
+    dcterms:title "Tabula Peutingeriana romana" . 
+
+
+
+
+########################################################################## LIVELLO 1 ###############################################################################################
+
+
+### CS1
+
+hf:Carta_HF_I_44v_45r vir:K1_denotes hf:Carta_HF_I_44v_45r_repr . 
+hf:Carta_HF_I_44v_45r_repr a vir:IC9_Representation . 
+hf:Carta_HF_I_44v_45r_repr vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a1 ;
+    rdfs:label "fisionomia antica del territorio ferrarese"@it ;
+    vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a2; 
+    vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a3; 
+    vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a4.
+hf:Carta_HF_I_44v_45r_repr_a1 rdfs:label "corso inferiore del po"@it ;
+    a vir:IC10_Attribute ; 
+    crm:P138_represents hf:place_corso_po . 
+hf:place_corso_po a crm:E53_Place.
+hf:Carta_HF_I_44v_45r_repr_a2 rdfs:label "dettaglio di diversi rami del delta padano"@it;
+    a vir:IC10_Attribute ; 
+    crm:P138_represents hf:place_delta_po .
+hf:place_corso_po a crm:E53_Place. 
+hf:Carta_HF_I_44v_45r_repr_a3 rdfs:label "catena degli appennini"@it;
+    a vir:IC10_Attribute ; 
+    crm:P138_represents hf:place_appennini .
+hf:place_appennini a crm:E53_Place. 
+hf:Carta_HF_I_44v_45r_repr_a4 rdfs:label "via Popolia Annia"@it ;
+    a vir:IC10_Attribute ;
+    crm:P138_represents hf:place_via_popolia_annia .
+hf:place_via_popolia_annia a crm:E53_Place. 
+
+
+### CS2
+
+hf:Carta_HF_IV_20v_21r vir:K1_denotes hf:Carta_HF_IV_20v_21r_repr . 
+hf:Carta_HF_IV_20v_21r_repr a vir:IC9_Representation . 
+hf:Carta_HF_IV_20v_21r_repr mima:has_missing_attribute hf:Carta_HF_IV_20v_21r_repr_a1 ;
+    mima:has_missing_attribute hf:Carta_HF_IV_20v_21r_repr_a2; 
+    vir:K17_has_attribute hf:Carta_HF_IV_20v_21r_repr_a3.
+hf:Carta_HF_IV_20v_21r_repr_a1 rdfs:label "Ponte san Giuliano"@it ;
+    a vir:IC10_Attribute ;
+    crm:P138_represents hf:ponte_san_giuliano .
+hf:ponte_san_giuliano a crm:E22_Man-Made_Object ; 
+    crm:P157_is_at_rest_relative_to hf:place_ponte_san_giuliano .
+hf:place_ponte_san_giuliano a crm:E53_Place .  
+hf:Carta_HF_IV_20v_21r_repr_a2 rdfs:label "Ponte di San Francesco"@it ;
+    a vir:IC10_Attribute ;
+    crm:P138_represents hf:ponte_san_francesco .
+hf:ponte_san_francesco a crm:E22_Man-Made_Object ;
+    crm:P157_is_at_rest_relative_to hf:place_ponte_san_francesco .
+hf:place_ponte_san_giuliano a crm:E53_Place .  
+hf:Carta_HF_IV_20v_21r_repr_a3 rdfs:label "Ponte di San Biagio"@it ;
+    a vir:IC10_Attribute ;
+    crm:P138_represents hf:ponte_san_biagio . 
+hf:ponte_san_biagio a crm:E22_Man-Made_Object ; 
+    crm:P157_is_at_rest_relative_to hf:place_ponte_san_biagio .
+hf:place_ponte_san_biagio a crm:E53_Place .  
+
+hf:ponte_san_biagio_prod a crm:E12_Production ; 
+    crm:P108_has_produced hf:ponte_san_biagio ; 
+    crm:P4_has_time-span hf:september_1494 ; 
+    crm:P120_occurrs_before hf:Carta_HF_IV_20v_21r_prod .
+hf:ponte_san_francesco_prod a crm:E12_Production ;
+    crm:P108_has_produced hf:ponte_san_francesco ;
+    crm:P4_has_time-span hf:april_december_1495 .
+hf:ponte_san_giuliano_prod a crm:E12_Production ; 
+    crm:P108_has_produced hf:ponte_san_giuliano ;
+    crm:P4_has_time-span hf:april_december_1495 . 
+
+hf:Carta_HF_IV_20v_21r_prod a crm:E12_Production ; 
+    crm:P108_has_produced hf:Carta_HF_IV_20v_21r ;
+    crm:P120_occurrs_before hf:ponte_san_francesco_prod ; 
+    crm:P120_occurs_before hf:ponte_san_giuliano_prod . 
+
+
+# CS3 
+
+hf:Carta_HF_IV_20v_21r vir:K1_denotes hf:Carta_HF_IV_20v_21r_repr . 
+hf:Carta_HF_IV_20v_21r_repr a vir:IC9_Representation . 
+hf:Carta_HF_IV_20v_21r_creat crm:P94_has_created hf:Carta_HF_IV_20v_21r_repr ; 
+    a crm:E65_Creation ;
+    crm:P15_was_influenced_by hf:misurazioni_BdN ; 
+    crm:P15_was_influenced_by hf:misurazioni_PP . 
+
+hf:misurazioni_BdN_creat crm:P94_has_created hf:misurazioni_BdaN ; 
+    crm:P14_carried_out_by hf:Person_BdaN . 
+hf:misurazioni_PP_creat crm:P94_has_created hf:misurazioni_PP ; 
+    crm:P14_carried_out_by hf:Person_PP . 
+
+
+# CS4 
+
+hf:Carta_HF_I_44v_45r_prod crm:P108_has_produced hf:Carta_HF_I_44v_45r ; 
+    crm:P14_carried_out_by crm:Person_PP . 
+
+hf:Carta_HF_I_44v_45r oaentry:isConceivedByMeansOf hf:Tabula_Peutingeriana_2 . 
+hf:Tabula_Peutingeriana_2 oaentry:isConceivedByMeansOf hf:Tabula_Peutingeriana_1 . 
+
+hf:Tabula_Peutingeriana_2_prod crm:P108_has_produced hf:Tabula_Peutingeriana_2 ;
+    crm:P14_carried_out_by hf:Person_Unknown_Scribe ;
+    crm:P4_has_time-span hf:IV_secAC . 
+hf:Tabula_Peutingeriana_1_prod crm:P108_has_produced hf:Tabula_Peutingeriana_1 ;
+    crm:P14_carried_out_by hf:Group_Romans ; 
+    crm:P4_has_time-span hf:XII-XIII_secAC . 
+
+
+
+
+
