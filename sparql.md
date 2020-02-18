@@ -49,3 +49,12 @@ NL: "Quali sono tutte le influenze (fisiche e concettuali) dell'illustrazione X?
 # Query 4 
 
 NL: "tutti gli eventi in cui PP è coinvolto"
+
+``` SELECT ?event ?artefact 
+WHERE {
+    ?prisciani a crm:E21_Person. 
+    ?event crm:P94_has_created | crm:P108_has_produced ?artefact .  
+    ?event crm:P14_carried_out_by ?prisciani . 
+    ?prisciani rdfs:label ?string .  
+FILTER regex(?string, "pellegrino prisciani", "i")
+}``` 
