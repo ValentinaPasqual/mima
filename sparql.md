@@ -1,3 +1,23 @@
+# How to run these queries 
+
+```
+filename = "toyset.ttl" #replace with the dataset 
+
+import rdflib
+import rdfextras
+rdfextras.registerplugins() # so we can Graph.query()
+
+g=rdflib.ConjunctiveGraph()
+g.parse(filename, format="ttl")
+results = g.query(""" Place here your query """)
+
+for row in results:
+    print (row)
+```
+
+
+# Queries 
+
 ## Query 1 
 
 NL: "Which are all the fragments (both visual and textual) present in the dataset?"
