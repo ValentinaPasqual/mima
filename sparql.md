@@ -107,3 +107,7 @@ FILTER regex(?string, "pellegrino prisciani", "i")
 ## Query 5 (cs5)
 
 NL: "Quali sono i temi rappresentati nelle illustrazioni delle HF o degli attributi delle illustrazioni?"
+
+## Query 6 
+
+NL: "Quali illustrazioni hanno il valore simbolico X?"
