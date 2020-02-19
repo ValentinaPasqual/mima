@@ -108,6 +108,25 @@ FILTER regex(?string, "pellegrino prisciani", "i")
 
 NL: "Quali sono i temi rappresentati nelle illustrazioni delle HF o degli attributi delle illustrazioni?"
 
+``` 
+SELECT DISTINCT ?theme
+WHERE { 
+    
+    ?manuscript crm:P46_is_composed_of ?icon_atom . 
+    ?icon_atom a vir:IC1_Iconographical_Atom ;
+        vir:K1_denotes ?repr .
+    
+    {?repr vir:K17_has_attribute ?attr . 
+    ?attr vir:K14_symbolize ?theme
+    }
+    
+    UNION 
+    
+    {?repr crm:P138_represents ?theme . 
+    ?theme a crm:E90_Symbolic_Object }
+}
+``` 
+
 ## Query 6 
 
 NL: "Quali illustrazioni hanno il valore simbolico X?"
