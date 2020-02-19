@@ -135,3 +135,7 @@ FILTER regex(?HF, "historiae ferrariae", "i")
 ## Query 6 
 
 NL: "Quali illustrazioni hanno il valore simbolico X?"
+
+## Query 7 
+
+NL: "Tutti i temi e simboli trattati nelle hf (che sono in comune con un'altra opera??)"
