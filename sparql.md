@@ -138,4 +138,4 @@ NL: "Quali illustrazioni hanno il valore simbolico X?"
 
 ## Query 7 
 
-NL: "Tutti i temi e simboli trattati nelle hf (che sono in comune con un'altra opera??)"
+NL: "Le fonti delle illustrazioni di HF, con tutto l'albero genealogico"
