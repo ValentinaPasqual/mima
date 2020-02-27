@@ -331,7 +331,7 @@ hf:provenance_cs1 {
 
 hf:pubInfo_cs1 {
     hf:pub_cs1 prov:wasAttributedTo hf:Person_VP .
-    hf:pub_cs1 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    hf:pub_cs1 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
 }
 
 #############################################################################  CS2  #############################################################################################
@@ -396,7 +396,7 @@ hf:provenance_cs2 {
 
 hf:pubInfo_cs2 {
     hf:pub_cs2 prov:wasAttributedTo hf:Person_VP .
-    hf:pub_cs2 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    hf:pub_cs2 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
 }
 
 ##############################################################################  CS3  ################################################################################################ 
@@ -434,7 +434,7 @@ hf:provenance_cs3 {
 
 hf:pubInfo_cs3 {
     hf:pub_cs3 prov:wasAttributedTo hf:Person_VP .
-    hf:pub_cs3 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    hf:pub_cs3 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
 }
 
 ########################################################################################  CS4  #######################################################################################
@@ -473,7 +473,7 @@ hf:provenance_cs4 {
 
 hf:pubInfo_cs4 {
     hf:pub_cs4 prov:wasAttributedTo hf:Person_VP .
-    hf:pub_cs4 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    hf:pub_cs4 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
 }
 
 #################################################################################  CS5  ############################################################################################# 
@@ -524,7 +524,7 @@ hf:provenance_cs5 {
 
 hf:pubInfo_cs5 {
     hf:pub_cs5 prov:wasAttributedTo hf:Person_VP .
-    hf:pub_cs5 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    hf:pub_cs5 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
 }
 
 
@@ -561,7 +561,7 @@ hf:provenance_cs7 {
 
 hf:pubInfo_cs7 {
     hf:pub_cs7 prov:wasAttributedTo hf:Person_VP .
-    hf:pub_cs7 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    hf:pub_cs7 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
 }
 
 hf:head_cs8 {
@@ -589,7 +589,7 @@ hf:provenance_cs8 {
 
 hf:pubInfo_cs8 {
     hf:pub_cs8 prov:wasAttributedTo hf:Person_VP .
-    hf:pub_cs8 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    hf:pub_cs8 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
 }
 
 hf:head_cs9 {
@@ -621,6 +621,6 @@ hf:provenance_cs9 {
 
 hf:pubInfo_cs9 {
     hf:pub_cs9 prov:wasAttributedTo hf:Person_VP .
-    hf:pub_cs9 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    hf:pub_cs9 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
 }
 
