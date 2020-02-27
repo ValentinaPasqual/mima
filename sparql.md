@@ -198,8 +198,28 @@ where {
 
 NL: "Quali sono gli elementi (testuali?) del manoscritto su cui vi sono fatte delle handwiting analysis di tipo paleografico?"
 
+``` 
+SELECT ?fragment
+where {
+	{
+     ?G a np:Nanopublication ; np:hasAssertion ?A; np:hasProvenance ?P; np:hasPublicationInfo ?PI . 
+	 ?HF a crm:E22_Man-Made_Object ; crm:P46_is_composed_of ?fragment . {?fragment a vir:IC1_Iconographical_Atom} union {?fragment a mimatex:TX7_Written_Text_Fragment} . 
+     graph ?A {?fragment ?predicate ?object}
+	 graph ?P {?A prov:wasGeneratedBy ?intact . ?intact hico:hasInterpretationCriterion mima:HandwritingAnalysis ; hico:hasInterpretationType mima:Palaeographical }
+	}
+}
+``` 
+
 ## Query 11 
 
 NL: "Quali sono le asserzioni che veicolano una visual recognition e a che disciplina appartengono?"
 
-
+``` 
+SELECT ?A ?int_type
+where {
+	{
+     ?G a np:Nanopublication ; np:hasAssertion ?A; np:hasProvenance ?P; np:hasPublicationInfo ?PI .
+	 graph ?P {?A prov:wasGeneratedBy ?intact . ?intact hico:hasInterpretationCriterion mima:HermeneuticAnalysis ; hico:hasInterpretationType ?int_type }
+	}
+}
+``` 
