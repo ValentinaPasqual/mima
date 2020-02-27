@@ -19,9 +19,91 @@
                         vann:preferredNamespaceUri "https://github.com/ValentinaPasqual/mima/edit/master/mima_ontology.ttl#" ;
                         owl:versionInfo "1.0" .
 
+
+
+
+########################################################################################################################
+############################################## OBJECT PROPERTIES #######################################################
+########################################################################################################################
+
+
 mima:has_missing_attribute a owl:ObjectProperty ;
     rdfs:domain vir:IC9_Representation ;
     rdfs:comment """This property associates an missing attribute with the iconographical object where it is depicted"""@en ;
     rdfs:label "has missing attribute" ;
     rdfs:range vir:IC10_Attribute ;
     rdfs:subPropertyOf crm:P106_is_composed_of .
+
+
+
+########################################################################################################################
+############################################## NAMED INDIVIDUALS #######################################################
+########################################################################################################################
+
+
+mima:SimilarityDetectionBetweenArtworks a owl:NamedIndividual ; 
+    a hico:InterpretatonCriterion ; 
+    rdfs:label "similarity detection between artworks" .
+
+mima:HermeneuticAnalysis a owl:NamedIndividual ; 
+    a hico:InterpretatonCriterion ; 
+    rdfs:label "hermeneutic analysis" .
+
+mima:SourcesOrInfluencesDetection a owl:NamedIndividual ; 
+    a hico:InterpretatonCriterion ; 
+    rdfs:label "sources or influences detection" .
+
+mima:HandwritingAnalysis a owl:NamedIndividual ; 
+    a hico:InterpretatonCriterion ; 
+    rdfs:label "handwriting analysis" .
+
+mima:Philological a owl:NamedIndividual ; 
+    a hico:InterpretatonType ; 
+    rdfs:label "philological analysis" .
+
+mima:Iconographical a owl:NamedIndividual ; 
+    a hico:InterpretatonType ; 
+    rdfs:label "iconographical analysis" .
+
+mima:Palaeographical a owl:NamedIndividual ; 
+    a hico:InterpretatonType ; 
+    rdfs:label "palaeographical analysis" .
+
+mima:GraphicTypology a owl:NamedIndividual ; 
+    a crm:E55_Type ; 
+    rdfs:label "graphic typology" .
+
+mima:ScriptorialStyle a owl:NamedIndividual ; 
+    a crm:E55_Type ; 
+    rdfs:label "scriptorial style" .
+
+mima:CapitaleEpigrafica a owl:NamedIndividual ; 
+    a crm:E41_Appellation ; 
+    rdfs:label "capital epigrafica" .
+
+mima:ScritturaImitativa a owl:NamedIndividual ; 
+    a crm:E41_Appellation ; 
+    rdfs:label "scrittura imitativa" .
+
+mima:ScritturaDiTipoBastardo a owl:NamedIndividual ; 
+    a crm:E41_Appellation ; 
+    rdfs:label "scrittura di tipo bastardo" .
+
+mima:ScritturaGreca a owl:NamedIndividual ; 
+    a crm:E41_Appellation ; 
+    rdfs:label "scrittura greca" .
+
+mima:CapitaleRustica a owl:NamedIndividual ; 
+    a crm:E41_Appellation ; 
+    rdfs:label "capitale rustica" .
+
+mima:CorsivaUmanistica a owl:NamedIndividual ; 
+    a crm:E41_Appellation ; 
+    rdfs:label "corsiva umanistica" .
+
+
+
+
+
+
+
