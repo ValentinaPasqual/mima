@@ -2,17 +2,17 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> . 
 @prefix vir: <http://w3id.org/vir#> .
+# @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cito: <http://purl.org/spar/cito/> .
-@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+# @prefix frbr: <http://purl.org/vocab/frbr/core#> .
 @prefix hico: <http://purl.org/emmedi/hico/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix oaentry: <http://purl.org/emmedi/oaentry/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix mima: <https://github.com/ValentinaPasqual/mima/edit/master/mima_ontology.ttl#> . 
 @prefix mimatex: <https://github.com/ValentinaPasqual/mima/edit/master/mima-tex.ttl#> .
@@ -615,7 +615,7 @@ hf:provenance_cs9 {
     hf:int_act_cs9 a hico:InterpretationAct ;
         hico:isExtractedFrom hf:MM_palaeo_material ;
         cwrc:hasCertainty cwrc:mediumCertainty ;
-        hico:hasInterpretationType mima:Iconographical ;
+        hico:hasInterpretationType mima:Palaeographical ;
         hico:hasInterpretationCriterion mima:HandwritingAnalysis 
 }
 

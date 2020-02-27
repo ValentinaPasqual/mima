@@ -166,9 +166,33 @@ NL: "Le fonti delle illustrazioni di HF, con tutto l'albero genealogico"  -- "op
 
 NL: "Quali sono gli elementi del manoscritto su cui vi sono fatte delle analisi ermeneutiche di tipo filologico?"
 
+``` 
+SELECT ?fragment
+where {
+	{
+     ?G a np:Nanopublication ; np:hasAssertion ?A; np:hasProvenance ?P; np:hasPublicationInfo ?PI . 
+	 ?HF a crm:E22_Man-Made_Object ; crm:P46_is_composed_of ?fragment . {?fragment a vir:IC1_Iconographical_Atom} union {?fragment a mimatex:TX7_Written_Text_Fragment} . 
+     graph ?A {?fragment ?predicate ?object}
+	 graph ?P {?A prov:wasGeneratedBy ?intact . ?intact hico:hasInterpretationCriterion mima:HermeneuticAnalysis; hico:hasInterpretationType mima:Philological }
+	}
+}
+``` 
+
 ## Query 9 
 
 NL: "Quali sono gli elementi del manoscritto su cui vi sono fatte delle similarities detections di tipo iconografico?"
+
+``` 
+SELECT ?fragment
+where {
+	{
+     ?G a np:Nanopublication ; np:hasAssertion ?A; np:hasProvenance ?P; np:hasPublicationInfo ?PI . 
+	 ?HF a crm:E22_Man-Made_Object ; crm:P46_is_composed_of ?fragment . {?fragment a vir:IC1_Iconographical_Atom} union {?fragment a mimatex:TX7_Written_Text_Fragment} . 
+     graph ?A {?fragment ?predicate ?object}
+	 graph ?P {?A prov:wasGeneratedBy ?intact . ?intact hico:hasInterpretationCriterion mima:SimilarityDetectionBetweenArtworks ; hico:hasInterpretationType mima:Iconographical }
+	}
+}
+``` 
 
 ## Query 10 
 
