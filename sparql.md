@@ -15,6 +15,9 @@ for row in results:
     print (row)
 ```
 
+## Used Namespaces 
+
+``````
 
 # Queries 
 
