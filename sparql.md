@@ -18,6 +18,24 @@ for row in results:
 ## Used Namespaces 
 
 ```
+prefix mimatex: <https://github.com/ValentinaPasqual/mima/edit/master/mima-tex.ttl#>
+prefix mima: <https://github.com/ValentinaPasqual/mima/edit/master/mima_ontology.ttl#>
+prefix dcterms: <http://purl.org/dc/terms/>
+prefix oaentry: <http://purl.org/emmedi/oaentry/>
+prefix fabio: <http://purl.org/spar/fabio/>
+prefix hico: <http://purl.org/emmedi/hico/>
+prefix cito: <http://purl.org/spar/cito/>
+prefix np: <http://www.nanopub.org/nschema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>
+prefix hf: <http://localhost:9999/blazegraph/namespace/kb/>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix vir: <http://w3id.org/vir#>
+prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#>
+
 ```
 
 # Queries 
