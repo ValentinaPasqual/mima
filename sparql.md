@@ -142,4 +142,22 @@ NL: "Quali illustrazioni hanno il valore simbolico X?"
 
 ## Query 7 
 
-NL: "Le fonti delle illustrazioni di HF, con tutto l'albero genealogico"
+NL: "Le fonti delle illustrazioni di HF, con tutto l'albero genealogico"  -- "oppure tutte le ricopiature che hanno portato alla carta X"
+
+## Query 8 - Inizio NamedGraphs
+
+NL: "Quali sono gli elementi del manoscritto su cui vi sono fatte delle visual recognition di tipo filologico?"
+
+## Query 9 
+
+NL: "Quali sono gli elementi del manoscritto su cui vi sono fatte delle similarities detections di tipo iconografico?"
+
+## Query 10 
+
+NL: "Quali sono gli elementi (testuali?) del manoscritto su cui vi sono fatte delle handwiting analysis di tipo paleografico?"
+
+## Query 11 
+
+NL: "Quali sono le asserzioni che veicolano una visual recognition e a che disciplina appartengono?"
+
+
