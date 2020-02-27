@@ -164,7 +164,7 @@ NL: "Le fonti delle illustrazioni di HF, con tutto l'albero genealogico"  -- "op
 
 ## Query 8 - Inizio NamedGraphs
 
-NL: "Quali sono gli elementi del manoscritto su cui vi sono fatte delle visual recognition di tipo filologico?"
+NL: "Quali sono gli elementi del manoscritto su cui vi sono fatte delle analisi ermeneutiche di tipo filologico?"
 
 ## Query 9 
 
