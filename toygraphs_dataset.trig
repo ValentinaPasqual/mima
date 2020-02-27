@@ -1,0 +1,626 @@
+@prefix hf: <urlgithub#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix np: <http://www.nanopub.org/nschema#> . 
+@prefix vir: <http://w3id.org/vir#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix hico: <http://purl.org/emmedi/hico/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix oaentry: <http://purl.org/emmedi/oaentry/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix mima: <https://github.com/ValentinaPasqual/mima/edit/master/mima_ontology.ttl#> . 
+@prefix mimatex: <https://github.com/ValentinaPasqual/mima/edit/master/mima-tex.ttl#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> . 
+
+
+# GRAFO NOMINTATO 0
+
+hf:graph_level0 {
+
+# TIME - SPANS 
+
+hf:XII-XIII_secAC a crm:E52_Time-Span . 
+hf:XII-XIII_secAC a crm:E52_Time-Span .
+hf:april_december_1495 a crm:E52_Time-Span .
+hf:september_1494 a crm:E52_Time-Span .
+
+#Carta d'identità di Pelle
+
+hf:Person_PP a crm:E21_Person;
+    owl:sameAs <http://viaf.org/viaf/92371881>;
+    rdfs:label "Pellegrino Prisciani".
+
+hf:Person_GBGuarini a crm:E21_Person; 
+    owl:sameAs <http://viaf.org/viaf/54142932>;
+    rdfs:label "Gian Battista Guarini".
+
+hf:Person_Tolomeo a crm:E21_Person;
+    owl:sameAs <http://viaf.org/viaf/54152998>;
+    rdfs:label "Claudio Tolomeo".
+
+hf:Person_LC a crm:E21_Person;
+    owl:sameAs <http://viaf.org/viaf/92317476>;
+    rdfs:label "Loredana Chines".
+
+hf:person_Konrad_Peutinger a crm:E21_Person; 
+    owl:sameAs <http://viaf.org/viaf/56776766>; 
+    rdfs:label "Konrad Peutinger".
+
+hf:person_Konrad_Celtis a crm:E21_Person;
+    owl:sameAs <http://viaf.org/viaf/64142723>; 
+    rdfs:label "Konrad Celtis".
+
+hf:Person_VP a crm:E21_Person;
+    rdfs:label "Valentina Pasqual".
+
+hf:person_Ercole_I_d_Este a crm:E21_Person;
+    owl:sameAs <http://viaf.org/viaf/50035133>; 
+    rdfs:label "Ercole I d'Este" . 
+
+hf:Person_BdaN a crm:E21_Person ; 
+    owl:sameAs <http://viaf.org/viaf/96158817>;
+    rdfs:label "Bartolino da Novara" .
+
+hf:Person_MF a crm:E21_Person ; 
+    owl:sameAs <http://viaf.org/viaf/74072974> ;
+    rdfs:label "Marco Folin" .
+
+hf:Person_Unknown_Scribe1 a crm:E21_Person ; 
+    rdfs:label "Unknown Scribe"@en . 
+
+hf:Group_Romans a crm:E74_Group ; 
+    rdfs:label "Romans"@en . 
+
+hf:Person_MdP a crm:E21_Person ; 
+    owl:sameAs <http://viaf.org/viaf/259895457> ; 
+    rdfs:label "Maestro di Pico"@it .
+
+hf:Person_MAS a crm:E21_Person ; 
+    owl:sameAs <http://viaf.org/viaf/12414496> ;
+    rdf:label "Marcus Antonius Sabellicus"@la . 
+
+
+# EDIZIONI 
+
+hf:LC_philo_material a fabio:Expression . 
+hf:SC_icon_material a fabio:Expression . 
+hf:MM_palaeo_material a fabio:Expression . 
+
+# Metadati strettamente al manoscritto fisico
+
+hf:Manuscript_C_HF a crm:E28_Conceptual_Object . 
+hf:Manuscript_C_HF a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_C_HF . #??? 
+
+
+hf:Manuscript_HF_I a crm:E22_Man-Made_Object ;
+        dcterms:title "Historiae Ferrariae I" ; 
+    crm:P128_carries hf:Manuscript_HF_I_C . 
+hf:Manuscript_HF_I_C a crm:E28_Conceptual_Object .
+hf:Production_HF_I a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_I . 
+hf:Creation_HF_I a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_I_C . 
+
+hf:Manuscript_HF_IV a crm:E22_Man-Made_Object ;
+    dcterms:title "Historiae Ferrariae IV" ; 
+    crm:P128_carries hf:Manuscript_HF_IV_C . 
+hf:Manuscript_HF_IV_C a crm:E28_Conceptual_Object .
+hf:Production_HF_IV a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_IV . 
+hf:Creation_HF_IV a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_IV_C . 
+
+hf:Manuscript_HF_VII a crm:E22_Man-Made_Object ;
+    dcterms:title "Historiae Ferrariae VII" ; 
+    crm:P128_carries hf:Manuscript_HF_VII_C . 
+hf:Manuscript_HF_vII_C a crm:E28_Conceptual_Object .
+hf:Production_HF_VII a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_VII . 
+hf:Creation_HF_VII a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_VII_C . 
+
+hf:Manuscript_HF_VIII a crm:E22_Man-Made_Object ;
+    dcterms:title "Historiae Ferrariae VIII" ; 
+    crm:P128_carries hf:Manuscript_HF_VIII_C . 
+hf:Manuscript_HF_VIII_C a crm:E28_Conceptual_Object .
+hf:Production_HF_VIII a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_VIII . 
+hf:Creation_HF_VIII a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_VIII_C . 
+
+hf:Manuscript_HF_IX a crm:E22_Man-Made_Object ;
+    dcterms:title "Historiae Ferrariae IX" ; 
+    crm:P128_carries hf:Manuscript_HF_IX_C . 
+hf:Manuscript_HF_IX_C a crm:E28_Conceptual_Object .
+hf:Production_HF_IX a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_IX . 
+hf:Creation_HF_IX a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_IX_C . 
+
+hf:Manuscript_HF_Y a crm:E22_Man-Made_Object ;
+    dcterms:title "Historiae Ferrariae Y" ; 
+    crm:P128_carries hf:Manuscript_HF_Y_C . 
+hf:Manuscript_HF_Y_C a crm:E28_Conceptual_Object .
+hf:Production_HF_Y a crm:E12_Production ;
+    crm:P108_has_produced hf:Manuscript_HF_Y . 
+hf:Creation_HF_Y a crm:E65_Creation ;
+    crm:P94_has_created hf:Manuscript_HF_Y_C . 
+
+# le fonti del manoscritto HF 
+#hf:Manuscript_HF crm:P15_was_influenced_by buh
+#    Sabellico (1436-1506 autore di una soria di Venezia)
+ #   Chronica Parva Ferrariensis di Riccobaldo (1246-1320)
+  #  Antichità giudaiche di Giuseppe Flavio
+   # Livio, Tacito e Giustino, tra i poeti Virgilio, Lucano, Seneca, Marziale
+    #Esiodo, Mercurio Trismegisto, Erodiano, le Storie di Dione Cassio. 
+    #testi cristiani, storici medievali e moderni, cronache e annali modenesi, epigrafi commemorative e moltissimi testi geografici e giuridici
+
+# Dove si trova la carta 1 nel manoscritto
+
+hf:Manuscript_HF_I crm:P46_is_composed_of hf:HF_I_Pag12 ;
+    crm:P46_is_composed_of hf:HF_I_Pag13 ; 
+    crm:P46_is_composed_of hf:Carta_HF_I_12v_13r .
+hf:HF_I_Pag12 crm:P56_bears_feature hf:HF_I_Pag12v ;
+    a crm:E22-Man-Made_Object . 
+hf:HF_I_Pag13 crm:P56_bears_feature hf:HF_I_Pag13r ;
+    a crm:E22-Man-Made_Object . 
+hf:HF_I_Pag12v crm:P56_bears_feature hf:Carta_HF_I_12v_13r ;
+    a vir:IC20_Verso . 
+hf:HF_I_Pag13r crm:P56_bears_feature hf:Carta_HF_I_12v_13r; 
+    a vir:IC19_Recto .
+hf:Carta_HF_I_12v_13r a vir:IC1_Iconographical_Atom . 
+
+#Dove si trova la carta 2 nel manoscritto
+
+hf:Manuscript_HF_I crm:P46_is_composed_of hf:HF_I_Pag44;
+    crm:P46_is_composed_of hf:HF_I_Pag45; 
+    crm:P46_is_composed_of hf:Carta_HF_I_44v_45r .
+hf:HF_I_Pag44 crm:P56_bears_feature hf:HF_I_Pag44v;
+    a crm:E22-Man-Made_Object . 
+hf:HF_I_Pag45 crm:P56_bears_feature hf:HF_I_Pag45r; 
+    a crm:E22-Man-Made_Object . 
+hf:HF_I_Pag44v crm:P56_bears_feature hf:Carta_HF_I_44v_45r ; 
+    a vir:IC20_Verso . 
+hf:HF_I_Pag45r crm:P56_bears_feature hf:Carta_HF_I_44v_45r ; 
+    a vir:IC19_Recto .
+hf:Carta_HF_I_44v_45r a vir:IC1_Iconographical_Atom ;
+    a oaentry:CopyorDerivation . 
+
+#Dove si trova la carta 3 nel manoscritto
+
+hf:Manuscript_HF_IV crm:P46_is_composed_of hf:HF_IV_Pag20;
+    crm:P46_is_composed_of hf:HF_IV_Pag21; 
+    crm:P46_is_composed_of hf:Carta_HF_IV_20v_21r . 
+hf:HF_IV_Pag20 crm:P56_bears_feature hf:HF_IV_Pag20v; 
+    a crm:E22-Man-Made_Object . 
+hf:HF_IV_Pag21 crm:P56_bears_feature hf:HF_IV_Pag21r;
+    a crm:E22-Man-Made_Object .  
+hf:HF_IV_Pag20v crm:P56_bears_feature hf:Carta_HF_IV_20v_21r;
+    a vir:IC20_Verso . 
+hf:HF_IV_Pag21r crm:P56_bears_feature hf:Carta_HF_IV_20v_21r;
+    a vir:IC19_Recto . 
+hf:Carta_HF_IV_20v_21r a vir:IC1_Iconographical_Atom ; 
+    rdfs:title "Proportionabilis et commensurata designatio urbis Ferrariae suburbiorumque et continentium aedificiorum priora etiam tempora respiciens"@la . 
+
+#Dove si trova il proemio nel manoscritto
+
+hf:Manuscript_HF_I crm:P46_is_composed_of hf:HF_I_incipit_Pag1 ; 
+    crm:P46_is_composed_of hf:HF_I_incipit_illustration ;
+    crm:P46_is_composed_of hf:HF_I_incipit_title-frag ;
+    crm:P46_is_composed_of hf:HF_I_incipit_intro-text-frag  . 
+hf:HF_I_incipit_Pag1 crm:P56_bears_feature hf:HF_I_incipit_Pag1_r ;
+    a crm:E22-Man-Made_Object . 
+hf:HF_I_incipit_Pag1_r crm:P56_bears_feature hf:HF_I_incipit_title-frag ;
+    crm:P56_bears_feature hf:HF_I_incipit_illustration ;
+    crm:P56_bears_feature hf:HF_I_incipit_intro-text-frag ; 
+    a vir:IC19_Recto . 
+hf:HF_I_incipit_title-frag a mimatex:TX7_Textual_Fragment . 
+hf:HF_I_incipit_intro-text-frag a mimatex:TX7_Textual_Fragment . 
+hf:HF_I_incipit_illustration a vir:IC1_Iconographical_Atom .
+
+# Dove si trova l'illustrazione X (in un'unica pagina)
+
+hf:Manuscript_HF_Y crm:P46_is_composed_of hf:HF_Y_PagX ;
+    crm:P46_is_composed_of hf:Illustrazione_X .
+hf:HF_Y_PagX crm:P56_bears_feature hf:HF_Y_PagXr .
+hf:HF_Y_PagX crm:P56_bears_feature hf:HF_Y_PagXv . 
+hf:HF_Y_PagXv crm:P56_bears_feature hf:Illustrazione_X ;
+    a vir:IC20_Verso . 
+hf:HF_Y_PagXr a vir:IC19_Recto . 
+hf:Illustrazione_X a vir:IC1_Iconographical_Atom. 
+
+# illustrazione col cavaliere HF
+
+hf:Manuscript_HF_I crm:P46_is_composed_of hf:HF_I_Illustrazione_cavaliere . #finto # non so in che pagina è 
+hf:HF_I_Illustrazione_cavaliere a vir:IC1_Iconographical_Atom . 
+
+# Illustrazione Maestro di Pico Cavaliere
+
+hf:Illustrazione_cavaliere_MDP a vir:IC1_Iconographical_Atom .
+hf:Rerum_Veneratum_Decades a crm:E22_Man-Made_Object ;
+    dcterms:title "Rerum Veneratum Decades"@la ;
+    crm:P46_is_composed_of hf:Illustrazione_cavaliere_MDP . 
+
+# misurazioni 
+
+hf:misurazioni_BdN a crm:E28_Conceptual_Object . 
+hf:misurazioni_PP a crm:E28_Conceptual_Object . 
+
+# Tavole Peutingeriane
+ 
+hf:Tabula_Peutingeriana_2 a vir:IC1_Iconographical_Atom ;
+    a oaentry:CopyorDerivation ; 
+    dcterms:title "Tabula Peutingeriana XII-XIII sec" . 
+
+hf:Tabula_Peutingeriana_1 a vir:IC1_Iconographical_Atom ;
+    dcterms:title "Tabula Peutingeriana romana" . 
+
+# Orthopasca di Pellegrino
+
+hf:Orthopasca a crm:E22_Man-Made_Object ; 
+    dcterms:title "Orthopasca"@la ;
+    crm:P46_is_composed_of hf:ortop_illustrazione_proemio . 
+hf:orthop_illustrazione_proemio a vir:IC1_Iconographical_Atom . 
+
+
+# SIMBOLI 
+
+hf:simbolo_guerra a crm:E90_Symbolic_Object; 
+    rdfs:label "Tema della guerra"@it . 
+
+hf:simbolo_solennità  a crm:E90_Symbolic_Object ;
+    rdfs:label "Tema della solennità, grandiosità, magnificenza"@it . 
+
+
+
+}
+
+########################################################################## LIVELLO 1 ###############################################################################################
+
+
+### CS1
+
+hf:head_cs1 {
+    hf:pub_cs1 a np:Nanopublication .
+    hf:pub_cs1 np:hasAssertion hf:assertion_cs1 .
+    hf:pub_cs1 np:hasProvenance hf:provenance_cs1 .
+    hf:pub_cs1 np:hasPublicationInfo hf:pubInfo_cs1 .
+}
+
+hf:assertion_cs1 {
+    hf:Carta_HF_I_44v_45r vir:K1_denotes hf:Carta_HF_I_44v_45r_repr . 
+    hf:Carta_HF_I_44v_45r_repr a vir:IC9_Representation . 
+    hf:Carta_HF_I_44v_45r_repr vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a1 ;
+        rdfs:label "fisionomia antica del territorio ferrarese"@it ;
+        vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a2; 
+        vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a3; 
+        vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a4.
+    hf:Carta_HF_I_44v_45r_repr_a1 rdfs:label "corso inferiore del po"@it ;
+        a vir:IC10_Attribute ; 
+        crm:P138_represents hf:place_corso_po . 
+    hf:place_corso_po a crm:E53_Place.
+    hf:Carta_HF_I_44v_45r_repr_a2 rdfs:label "dettaglio di diversi rami del delta padano"@it;
+        a vir:IC10_Attribute ; 
+        crm:P138_represents hf:place_delta_po .
+    hf:place_corso_po a crm:E53_Place. 
+    hf:Carta_HF_I_44v_45r_repr_a3 rdfs:label "catena degli appennini"@it;
+        a vir:IC10_Attribute ; 
+        crm:P138_represents hf:place_appennini .
+    hf:place_appennini a crm:E53_Place. 
+    hf:Carta_HF_I_44v_45r_repr_a4 rdfs:label "via Popolia Annia"@it ;
+        a vir:IC10_Attribute ;
+        crm:P138_represents hf:place_via_popolia_annia .
+    hf:place_via_popolia_annia a crm:E53_Place. 
+}
+
+hf:provenance_cs1 {
+    hf:assertion_cs1 prov:wasGeneratedBy hf:int_act_cs1 . 
+    hf:int_act_cs1 a hico:InterpretationAct  ;
+        hico:isExtractedFrom hf:LC_philo_material ;
+        cwrc:hasCertainty cwrc:lowCertainty ;
+        hico:hasInterpretationType mima:Philological ;
+        hico:hasInterpretationCriterion mima:SourcesOrInfluencesDetection  
+}
+
+hf:pubInfo_cs1 {
+    hf:pub_cs1 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs1 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+#############################################################################  CS2  #############################################################################################
+
+hf:head_cs2 {
+    hf:pub_cs2 a np:Nanopublication .
+    hf:pub_cs2 np:hasAssertion hf:assertion_cs2 .
+    hf:pub_cs2 np:hasProvenance hf:provenance_cs2 .
+    hf:pub_cs2 np:hasPublicationInfo hf:pubInfo_cs2 .
+}
+
+hf:assertion_cs2 {
+    hf:Carta_HF_IV_20v_21r vir:K1_denotes hf:Carta_HF_IV_20v_21r_repr . 
+    hf:Carta_HF_IV_20v_21r_repr a vir:IC9_Representation . 
+    hf:Carta_HF_IV_20v_21r_repr mima:has_missing_attribute hf:Carta_HF_IV_20v_21r_repr_a1 ;
+        mima:has_missing_attribute hf:Carta_HF_IV_20v_21r_repr_a2; 
+        vir:K17_has_attribute hf:Carta_HF_IV_20v_21r_repr_a3.
+    hf:Carta_HF_IV_20v_21r_repr_a1 rdfs:label "Ponte san Giuliano"@it ;
+        a vir:IC10_Attribute ;
+        crm:P138_represents hf:ponte_san_giuliano .
+    hf:ponte_san_giuliano a crm:E22_Man-Made_Object ; 
+        crm:P157_is_at_rest_relative_to hf:place_ponte_san_giuliano .
+    hf:place_ponte_san_giuliano a crm:E53_Place .  
+    hf:Carta_HF_IV_20v_21r_repr_a2 rdfs:label "Ponte di San Francesco"@it ;
+        a vir:IC10_Attribute ;
+        crm:P138_represents hf:ponte_san_francesco .
+    hf:ponte_san_francesco a crm:E22_Man-Made_Object ;
+        crm:P157_is_at_rest_relative_to hf:place_ponte_san_francesco .
+    hf:place_ponte_san_giuliano a crm:E53_Place .  
+    hf:Carta_HF_IV_20v_21r_repr_a3 rdfs:label "Ponte di San Biagio"@it ;
+        a vir:IC10_Attribute ;
+        crm:P138_represents hf:ponte_san_biagio . 
+    hf:ponte_san_biagio a crm:E22_Man-Made_Object ; 
+        crm:P157_is_at_rest_relative_to hf:place_ponte_san_biagio .
+    hf:place_ponte_san_biagio a crm:E53_Place .  
+
+    hf:ponte_san_biagio_prod a crm:E12_Production ; 
+        crm:P108_has_produced hf:ponte_san_biagio ; 
+        crm:P4_has_time-span hf:september_1494 ; 
+        crm:P120_occurrs_before hf:Carta_HF_IV_20v_21r_prod .
+    hf:ponte_san_francesco_prod a crm:E12_Production ;
+        crm:P108_has_produced hf:ponte_san_francesco ;
+        crm:P4_has_time-span hf:april_december_1495 .
+    hf:ponte_san_giuliano_prod a crm:E12_Production ; 
+        crm:P108_has_produced hf:ponte_san_giuliano ;
+        crm:P4_has_time-span hf:april_december_1495 . 
+
+    hf:Carta_HF_IV_20v_21r_prod a crm:E12_Production ; 
+        crm:P108_has_produced hf:Carta_HF_IV_20v_21r ;
+        crm:P120_occurrs_before hf:ponte_san_francesco_prod ; 
+        crm:P120_occurs_before hf:ponte_san_giuliano_prod . 
+}
+
+hf:provenance_cs2 {
+    hf:assertion_cs2 prov:wasGeneratedBy hf:int_act_cs2 . 
+    hf:int_act_cs2 a hico:InterpretationAct  ; 
+        hico:isExtractedFrom hf:LC_philo_material ;
+        cwrc:hasCertainty cwrc:mediumCertainty ;
+        hico:hasInterpretationType mima:Philological ;
+        hico:hasInterpretationCriterion mima:SourcesOrInfluencesDetection  
+}
+
+hf:pubInfo_cs2 {
+    hf:pub_cs2 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs2 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+##############################################################################  CS3  ################################################################################################ 
+
+hf:head_cs3 {
+    hf:pub_cs3 a np:Nanopublication .
+    hf:pub_cs3 np:hasAssertion hf:assertion_cs3 .
+    hf:pub_cs3 np:hasProvenance hf:provenance_cs3 .
+    hf:pub_cs3 np:hasPublicationInfo hf:pubInfo_cs3 .
+}
+
+hf:assertion_cs3{
+
+    hf:Carta_HF_IV_20v_21r vir:K1_denotes hf:Carta_HF_IV_20v_21r_repr . 
+    hf:Carta_HF_IV_20v_21r_repr a vir:IC9_Representation . 
+    hf:Carta_HF_IV_20v_21r_creat crm:P94_has_created hf:Carta_HF_IV_20v_21r_repr ; 
+        a crm:E65_Creation ;
+        crm:P15_was_influenced_by hf:misurazioni_BdN ; 
+        crm:P15_was_influenced_by hf:misurazioni_PP . 
+
+    hf:misurazioni_BdN_creat crm:P94_has_created hf:misurazioni_BdaN ; 
+        crm:P14_carried_out_by hf:Person_BdaN . 
+    hf:misurazioni_PP_creat crm:P94_has_created hf:misurazioni_PP ; 
+        crm:P14_carried_out_by hf:Person_PP . 
+}
+
+hf:provenance_cs3 {
+    hf:assertion_cs3 prov:wasGeneratedBy hf:int_act_cs3 . 
+    hf:int_act_cs3 a hico:InterpretationAct  ; 
+        hico:isExtractedFrom hf:LC_philo_material ;
+        cwrc:hasCertainty cwrc:lowCertainty ;
+        hico:hasInterpretationType mima:Philological ;
+        hico:hasInterpretationCriterion mima:SourcesOrInfluencesDetection  
+}
+
+hf:pubInfo_cs3 {
+    hf:pub_cs3 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs3 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+########################################################################################  CS4  #######################################################################################
+
+hf:head_cs4 {
+    hf:pub_cs4 a np:Nanopublication .
+    hf:pub_cs4 np:hasAssertion hf:assertion_cs4 .
+    hf:pub_cs4 np:hasProvenance hf:provenance_cs4 .
+    hf:pub_cs4 np:hasPublicationInfo hf:pubInfo_cs4 .
+}
+
+hf:assertion_cs4 {
+
+    hf:Carta_HF_I_44v_45r_prod crm:P108_has_produced hf:Carta_HF_I_44v_45r ; 
+        crm:P14_carried_out_by crm:Person_PP . 
+
+    hf:Carta_HF_I_44v_45r oaentry:isConceivedByMeansOf hf:Tabula_Peutingeriana_2 . 
+    hf:Tabula_Peutingeriana_2 oaentry:isConceivedByMeansOf hf:Tabula_Peutingeriana_1 . 
+
+    hf:Tabula_Peutingeriana_2_prod crm:P108_has_produced hf:Tabula_Peutingeriana_2 ;
+        crm:P14_carried_out_by hf:Person_Unknown_Scribe ;
+        crm:P4_has_time-span hf:IV_secAC . 
+    hf:Tabula_Peutingeriana_1_prod crm:P108_has_produced hf:Tabula_Peutingeriana_1 ;
+        crm:P14_carried_out_by hf:Group_Romans ; 
+        crm:P4_has_time-span hf:XII-XIII_secAC . 
+}
+
+hf:provenance_cs4 {
+    hf:assertion_cs4 prov:wasGeneratedBy hf:int_act_cs4 . 
+    hf:int_act_cs4 a hico:InterpretationAct ;
+        hico:isExtractedFrom hf:LC_philo_material ;
+        cwrc:hasCertainty cwrc:lowCertainty ;
+        hico:hasInterpretationType mima:Philological ;
+        hico:hasInterpretationCriterion mima:SourcesOrInfluencesDetection  
+}
+
+hf:pubInfo_cs4 {
+    hf:pub_cs4 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs4 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+#################################################################################  CS5  ############################################################################################# 
+
+hf:head_cs5 {
+    hf:pub_cs5 a np:Nanopublication .
+    hf:pub_cs5 np:hasAssertion hf:assertion_cs5 .
+    hf:pub_cs5 np:hasProvenance hf:provenance_cs5 .
+    hf:pub_cs5 np:hasPublicationInfo hf:pubInfo_cs5 .
+}
+
+hf:assertion_cs5 {
+    hf:Rerum_Veneratum_Decades crm:P128_carries hf:Rerum_Veneratum_Decades_conc .
+    hf:Rerum_Veneratum_Decades_conc a crm:E28_Conceptual_Object . 
+    hf:Rerum_Veneratum_Decades_conc_creat a crm:E65_Creation ; 
+        crm:P94_has_created hf:Rerum_Veneratum_Decades_conc ; 
+        crm:P14_carried_out_by hf:Person_MAS . 
+
+    hf:Illustrazione_cavaliere_MDP_prod a crm:E12_Production ;
+        crm:P108_has_produced hf:Illustrazione_cavaliere_MDP ; 
+        crm:P14_carried_out_by hf:Person_MdP .
+
+    hf:Illustrazione_cavaliere_MDP vir:K1_denotes hf:Illustrazione_cavaliere_MDP_rep .
+    hf:Illustrazione_cavaliere_MDP_rep a vir:IC9_Representation ; 
+        vir:K17_has_attribute hf:Illustrazione_cavaliere_MDP_rep_a1 . 
+    hf:Illustrazione_cavaliere_MDP_rep_a1 a vir:IC10_Attribute ; 
+        vir:K14_symbolize hf:simbolo_guerra . 
+
+    hf:Illustrazione_cavaliere_prod a crm:E12_Production ;
+        crm:P108_has_produced hf:Illustrazione_cavaliere ; 
+        crm:P14_carried_out_by hf:Person_PP .
+
+    hf:HF_I_Illustrazione_cavaliere vir:K1_denotes hf:HF_I_Illustrazione_cavaliere_rep . 
+    hf:HF_I_Illustrazione_cavaliere_rep a vir:IC9_Representation ; 
+        vir:K17_has_attribute hf:HF_I_Illustrazione_cavaliere_rep_a1 . 
+    hf:HF_I_Illustrazione_cavaliere_rep_a1 a vir:IC10_Attribute ;
+        vir:K14_symbolize hf:simbolo_guerra . 
+}
+
+hf:provenance_cs5 {
+    hf:assertion_cs5 prov:wasGeneratedBy hf:int_act_cs5 . 
+    hf:int_act_cs5 a hico:InterpretationAct ;
+        hico:isExtractedFrom hf:SC_icon_material ;
+        cwrc:hasCertainty cwrc:mediumCertainty ;
+        hico:hasInterpretationType mima:Iconographical ; 
+        hico:hasInterpretationCriterion mima:SimilarityDetectionBetweenArtworks 
+}
+
+hf:pubInfo_cs5 {
+    hf:pub_cs5 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs5 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+
+# CS6 - per ora non lo faccio 
+
+
+############################################################################## CS7 - 8 - 9  - aiaisusmari ############################################################################
+
+hf:head_cs7 {
+    hf:pub_cs7 a np:Nanopublication .
+    hf:pub_cs7 np:hasAssertion hf:assertion_cs7 .
+    hf:pub_cs7 np:hasProvenance hf:provenance_cs7 .
+    hf:pub_cs7 np:hasPublicationInfo hf:pubInfo_cs7 .
+}   
+
+hf:assertion_cs7 {
+    hf:HF_I_incipit_illustration vir:K1_denotes hf:HF_I_incipit_illustration_rep1 .
+    hf:HF_I_incipit_illustration_rep1 vir:K17_has_attribute hf:HF_I_incipit_illustration_rep1_a1 ;
+        vir:K17_has_attribute hf:HF_I_incipit_illustration_rep1_a2 . 
+    hf:HF_I_incipit_illustration_rep1_a1 a vir:IC10_Attribute . 
+    hf:HF_I_incipit_illustration_rep1_a2 a vir:IC10_Attribute .
+    hf:HF_I_incipit_illustration_rep1_a1 crm:P138_represents hf:Person_PP . 
+    hf:HF_I_incipit_illustration_rep1_a2 crm:P138_represents hf:person_Ercole_I_d_Este . 
+}
+
+hf:provenance_cs7 {
+    hf:assertion_cs7 prov:wasGeneratedBy hf:int_act_cs7 . 
+    hf:int_act_cs7 a hico:InterpretationAct ;
+        hico:isExtractedFrom hf:LC_philo_material ;
+        cwrc:hasCertainty cwrc:mediumCertainty ;
+        hico:hasInterpretationType mima:Philological ;
+        hico:hasInterpretationCriterion mima:HermeneuticAnalysis  
+}
+
+hf:pubInfo_cs7 {
+    hf:pub_cs7 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs7 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+hf:head_cs8 {
+    hf:pub_cs8 a np:Nanopublication .
+    hf:pub_cs8 np:hasAssertion hf:assertion_cs8 .
+    hf:pub_cs8 np:hasProvenance hf:provenance_cs8 .
+    hf:pub_cs8 np:hasPublicationInfo hf:pubInfo_cs8 .
+}   
+
+hf:assertion_cs8 {
+    hf:HF_I_incipit_illustration vir:K1_denotes hf:HF_I_incipit_illustration_rep2 .
+    hf:HF_I_incipit_illustration_rep2 crm:P138_represents hf:simbolo_solennità . 
+    hf:orthop_illustrazione_proemio vir:K1_denotes hf:orthop_illustrazione_proemio_rep . 
+    hf:orthop_illustrazione_proemio_rep crm:P138_represents hf:simbolo_solennità . 
+}
+
+hf:provenance_cs8 {
+    hf:assertion_cs8 prov:wasGeneratedBy hf:int_act_cs8 . 
+    hf:int_act_cs8 a hico:InterpretationAct ;
+        hico:isExtractedFrom hf:SC_icon_material ;
+        cwrc:hasCertainty cwrc:mediumCertainty ;
+        hico:hasInterpretationType mima:Iconographical ;
+        hico:hasInterpretationCriterion mima:SimilarityDetectionBetweenArtworks  
+}
+
+hf:pubInfo_cs8 {
+    hf:pub_cs8 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs8 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+hf:head_cs9 {
+    hf:pub_cs9 a np:Nanopublication .
+    hf:pub_cs9 np:hasAssertion hf:assertion_cs9 .
+    hf:pub_cs9 np:hasProvenance hf:provenance_cs9 .
+    hf:pub_cs9 np:hasPublicationInfo hf:pubInfo_cs9 .
+}   
+
+hf:assertion_cs9 {
+hf:HF_I_incipit_illustration vir:K1_denotes hf:HF_I_incipit_illustration_rep3 .
+hf:HF_I_incipit_illustration_rep3 crm:P138_represents hf:simbolo_solennità . 
+hf:HF_I_incipit_intro-text-frag_wr crm:P108_has_produced hf:HF_I_incipit_intro-text-frag ;
+    crm:P16_used_specific_object crm:HF_I_incipit_graphic_style . 
+hf:HF_I_incipit_title-frag_wr crm:P108_has_produced hf:HF_I_incipit_title-frag_wr ; 
+    crm:P16_used_specific_object hf:HF_I_incipit_graphic_style . 
+hf:HF_I_incipit_graphic_style a crm:E28_Conceptual_Object ; 
+    crm:P67_refers_to hf:simbolo_solennità .  
+}
+
+hf:provenance_cs9 {
+    hf:assertion_cs9 prov:wasGeneratedBy hf:int_act_cs9 . 
+    hf:int_act_cs9 a hico:InterpretationAct ;
+        hico:isExtractedFrom hf:MM_palaeo_material ;
+        cwrc:hasCertainty cwrc:mediumCertainty ;
+        hico:hasInterpretationType mima:Iconographical ;
+        hico:hasInterpretationCriterion mima:HandwritingAnalysis 
+}
+
+hf:pubInfo_cs9 {
+    hf:pub_cs9 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs9 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   # finto !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
