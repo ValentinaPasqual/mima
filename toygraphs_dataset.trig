@@ -29,6 +29,31 @@ hf:XII-XIII_secAC a crm:E52_Time-Span .
 hf:XII-XIII_secAC a crm:E52_Time-Span .
 hf:april_december_1495 a crm:E52_Time-Span .
 hf:september_1494 a crm:E52_Time-Span .
+hf:II_secAC a crm:E52_Time-Span . 
+
+
+# PLACES 
+
+hf:place_corso_po a crm:E53_Place ; 
+    rdfs:label "Corso del Po"@it .
+hf:place_delta_po a crm:E53_Place ; 
+    rdfs:label "Delta del Po"@it .
+hf:place_appennini a crm:E53_Place ; 
+    rdfs:label "Catena degli Appennini".
+hf:place_via_popolia_annia a crm:E53_Place ;  
+    rdfs:label "Via Popolia Annia"@it .
+hf:place_ponte_san_giuliano a crm:E53_Place ; 
+    rdfs:label "Ponte di San Giuliano"@it .      
+hf:place_ponte_san_francesco a crm:E53_Place ; 
+    rdfs:label "Ponte di San Francesco"@it .  
+hf:place_ponte_san_biagio a crm:E53_Place ; 
+    rdfs:label "Ponte di San Biagio"@it .
+hf:place_italy a crm:E53_Place ; 
+    rdfs:label "Italia"@it . 
+hf:place_ferrara a crm:E53_Place ; 
+    rdfs:label "Ferrara"@it . 
+hf:place_tridentum a crm:E53_Place ; 
+    rdfs:label "Tridentum"@la . 
 
 #Carta d'identità di Pelle
 
@@ -175,7 +200,8 @@ hf:HF_I_Pag12v crm:P56_bears_feature hf:Carta_HF_I_12v_13r ;
     a vir:IC20_Verso . 
 hf:HF_I_Pag13r crm:P56_bears_feature hf:Carta_HF_I_12v_13r; 
     a vir:IC19_Recto .
-hf:Carta_HF_I_12v_13r a vir:IC1_Iconographical_Atom . 
+hf:Carta_HF_I_12v_13r a vir:IC1_Iconographical_Atom ; 
+    a oaentry:CopyOrDerivation . 
 
 #Dove si trova la carta 2 nel manoscritto
 
@@ -191,7 +217,7 @@ hf:HF_I_Pag44v crm:P56_bears_feature hf:Carta_HF_I_44v_45r ;
 hf:HF_I_Pag45r crm:P56_bears_feature hf:Carta_HF_I_44v_45r ; 
     a vir:IC19_Recto .
 hf:Carta_HF_I_44v_45r a vir:IC1_Iconographical_Atom ;
-    a oaentry:CopyorDerivation . 
+    a oaentry:CopyOrDerivation . 
 
 #Dove si trova la carta 3 nel manoscritto
 
@@ -256,11 +282,11 @@ hf:misurazioni_PP a crm:E28_Conceptual_Object .
 # Tavole Peutingeriane
  
 hf:Tabula_Peutingeriana_2 a vir:IC1_Iconographical_Atom ;
-    a oaentry:CopyorDerivation ; 
-    dcterms:title "Tabula Peutingeriana XII-XIII sec" . 
+    a oaentry:CopyOrDerivation ; 
+    dcterms:title "Tabula Peutingeriana XII-XIII sec"@it . 
 
 hf:Tabula_Peutingeriana_1 a vir:IC1_Iconographical_Atom ;
-    dcterms:title "Tabula Peutingeriana romana" . 
+    dcterms:title "Tabula Peutingeriana romana"@it . 
 
 # Orthopasca di Pellegrino
 
@@ -269,6 +295,28 @@ hf:Orthopasca a crm:E22_Man-Made_Object ;
     crm:P46_is_composed_of hf:ortop_illustrazione_proemio . 
 hf:orthop_illustrazione_proemio a vir:IC1_Iconographical_Atom . 
 
+# Carte dell'Italia di Tolomeo 
+
+hf:Carta_GBGuarini_Italia_Tolomeo a vir:IC1_Iconographical_Atom ; 
+    a oaentry:CopyOrDerivation ;
+    dcterms:title "Carta dell'Italia di Tolomeo di Gian Battista Guarini"@it . 
+hf:Carta_Cosmographia_Italia_Tolomeo a vir:IC1_Iconographical_Atom ; 
+    dcterms:title "Carta dell'Italia di Tolomeo dalla Cosmographia di Tolomeo"@it . 
+hf:Cosmographia a vir:E22_Man-Made_Object ;
+    dcterms:title "Cosmographia"@la ;
+    crm:P46_is_composed_of hf:Carta_Cosmographia_Italia_Tolomeo . 
+
+# Carte Giocattolo per testare concatenazioni di copiature
+
+hf:Carta_example1 a vir:IC1_Iconographical_Atom ; 
+    a oaentry:CopyOrDerivation . 
+hf:Carta_example2 a vir:IC1_Iconographical_Atom ; 
+    a oaentry:CopyOrDerivation . 
+hf:Carta_example3 a vir:IC1_Iconographical_Atom ; 
+    a oaentry:CopyOrDerivation . 
+hf:Carta_example4 a vir:IC1_Iconographical_Atom ; 
+    a oaentry:CopyOrDerivation . 
+hf:Carta_example5 a vir:IC1_Iconographical_Atom .
 
 # SIMBOLI 
 
@@ -277,8 +325,6 @@ hf:simbolo_guerra a crm:E90_Symbolic_Object;
 
 hf:simbolo_solennità  a crm:E90_Symbolic_Object ;
     rdfs:label "Tema della solennità, grandiosità, magnificenza"@it . 
-
-
 
 }
 
@@ -305,19 +351,15 @@ hf:assertion_cs1 {
     hf:Carta_HF_I_44v_45r_repr_a1 rdfs:label "corso inferiore del po"@it ;
         a vir:IC10_Attribute ; 
         crm:P138_represents hf:place_corso_po . 
-    hf:place_corso_po a crm:E53_Place.
     hf:Carta_HF_I_44v_45r_repr_a2 rdfs:label "dettaglio di diversi rami del delta padano"@it;
         a vir:IC10_Attribute ; 
-        crm:P138_represents hf:place_delta_po .
-    hf:place_corso_po a crm:E53_Place. 
+        crm:P138_represents hf:place_delta_po . 
     hf:Carta_HF_I_44v_45r_repr_a3 rdfs:label "catena degli appennini"@it;
         a vir:IC10_Attribute ; 
         crm:P138_represents hf:place_appennini .
-    hf:place_appennini a crm:E53_Place. 
     hf:Carta_HF_I_44v_45r_repr_a4 rdfs:label "via Popolia Annia"@it ;
         a vir:IC10_Attribute ;
         crm:P138_represents hf:place_via_popolia_annia .
-    hf:place_via_popolia_annia a crm:E53_Place. 
 }
 
 hf:provenance_cs1 {
@@ -353,20 +395,17 @@ hf:assertion_cs2 {
         a vir:IC10_Attribute ;
         crm:P138_represents hf:ponte_san_giuliano .
     hf:ponte_san_giuliano a crm:E22_Man-Made_Object ; 
-        crm:P157_is_at_rest_relative_to hf:place_ponte_san_giuliano .
-    hf:place_ponte_san_giuliano a crm:E53_Place .  
+        crm:P157_is_at_rest_relative_to hf:place_ponte_san_giuliano .        
     hf:Carta_HF_IV_20v_21r_repr_a2 rdfs:label "Ponte di San Francesco"@it ;
         a vir:IC10_Attribute ;
         crm:P138_represents hf:ponte_san_francesco .
     hf:ponte_san_francesco a crm:E22_Man-Made_Object ;
         crm:P157_is_at_rest_relative_to hf:place_ponte_san_francesco .
-    hf:place_ponte_san_giuliano a crm:E53_Place .  
     hf:Carta_HF_IV_20v_21r_repr_a3 rdfs:label "Ponte di San Biagio"@it ;
         a vir:IC10_Attribute ;
         crm:P138_represents hf:ponte_san_biagio . 
     hf:ponte_san_biagio a crm:E22_Man-Made_Object ; 
         crm:P157_is_at_rest_relative_to hf:place_ponte_san_biagio .
-    hf:place_ponte_san_biagio a crm:E53_Place .  
 
     hf:ponte_san_biagio_prod a crm:E12_Production ; 
         crm:P108_has_produced hf:ponte_san_biagio ; 
@@ -528,8 +567,47 @@ hf:pubInfo_cs5 {
 }
 
 
-# CS6 - per ora non lo faccio 
+################################################################################ CS6 - per ora non lo faccio ######################################################################
 
+## è una carta in caratteri greci dell’Italia di Tolomeo, tratta dalla sua Cosmographia e copiata a Ferrara da un esemplare antico posseduto da Battista Guarini, suo preceptor optimus.
+
+hf:head_cs6 {
+    hf:pub_cs6 a np:Nanopublication .
+    hf:pub_cs6 np:hasAssertion hf:assertion_cs6 .
+    hf:pub_cs6 np:hasProvenance hf:provenance_cs6 .
+    hf:pub_cs6 np:hasPublicationInfo hf:pubInfo_cs6 .
+}   
+
+hf:assertion_cs6 {
+    hf:Carta_HF_I_12v_13r vir:K1_denotes hf:Carta_HF_I_12v_13r_rep . 
+    hf:Carta_HF_I_12v_13r_rep rdfs:label "carta in caratteri greci dell’Italia di Tolomeo"@it ;
+        a vir:IC9_Representation .
+    hf:Carta_HF_I_12v_13r oaentry:isConceivedByMeansOf hf:Carta_GBGuarini_Italia_Tolomeo . 
+    hf:Carta_GBGuarini_Italia_Tolomeo oaentry:isConceivedByMeansOf hf:Carta_Cosmographia_Italia_Tolomeo .
+    hf:Carta_GBGuarini_Italia_Tolomeo_prod crm:P108_has_produced hf:Carta_GBGuarini_Italia_Tolomeo ;
+        crm:P14_carried_out_by hf:Person_GBGuarini ; 
+        a crm:E12_Production ; 
+        crm:P7_took_place_at hf:place_ferrara . 
+    hf:Carta_HF_I_12v_13r_rep crm:P138_represents hf:place_italy ;
+        crm:P138_represents hf:II_secAC . 
+    hf:Carta_HF_I_12v_13r_rep vir:K17_has_attribute hf:Carta_HF_I_12v_13r_rep_a1 . 
+    hf:Carta_HF_I_12v_13r_rep_a1 a vir:IC10_Attribute .    
+    hf:Carta_HF_I_12v_13r_rep_a1 crm:P138_represents hf:place_tridentum . 
+}
+
+hf:provenance_cs6 {
+    hf:assertion_cs6 prov:wasGeneratedBy hf:int_act_cs6 . 
+    hf:int_act_cs6 a hico:InterpretationAct ;
+        hico:isExtractedFrom hf:LC_philo_material ;
+        cwrc:hasCertainty cwrc:lowCertainty ;
+        hico:hasInterpretationType mima:Philological ;
+        hico:hasInterpretationCriterion mima:SourcesOrInfluencesDetection  
+}
+
+hf:pubInfo_cs6 {
+    hf:pub_cs6 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs6 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
+}
 
 ############################################################################## CS7 - 8 - 9  - aiaisusmari ############################################################################
 
@@ -614,7 +692,7 @@ hf:provenance_cs9 {
     hf:assertion_cs9 prov:wasGeneratedBy hf:int_act_cs9 . 
     hf:int_act_cs9 a hico:InterpretationAct ;
         hico:isExtractedFrom hf:MM_palaeo_material ;
-        cwrc:hasCertainty cwrc:mediumCertainty ;
+        cwrc:hasCertainty cwrc:mediumCertainty ;    
         hico:hasInterpretationType mima:Palaeographical ;
         hico:hasInterpretationCriterion mima:HandwritingAnalysis 
 }
@@ -622,5 +700,38 @@ hf:provenance_cs9 {
 hf:pubInfo_cs9 {
     hf:pub_cs9 prov:wasAttributedTo hf:Person_VP .
     hf:pub_cs9 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
+}
+
+############################################################################## CS 10 ####################################################################################################
+
+# toydata to test concatenations of copies
+
+hf:head_cs10 {
+    hf:pub_cs10 a np:Nanopublication .
+    hf:pub_cs10 np:hasAssertion hf:assertion_cs10 .
+    hf:pub_cs10 np:hasProvenance hf:provenance_cs10 .
+    hf:pub_cs10 np:hasPublicationInfo hf:pubInfo_cs10 .
+}   
+
+hf:assertion_cs10 {
+    hf:Carta_HF_X oaentry:isConceivedByMeansOf hf:Carta_example1 .
+    hf:Carta_example1 oaentry:isConceivedByMeansOf hf:Carta_example2 .
+    hf:Carta_example2 oaentry:isConceivedByMeansOf hf:Carta_example3 .
+    hf:Carta_example3 oaentry:isConceivedByMeansOf hf:Carta_example4 .
+    hf:Carta_example4 oaentry:isConceivedByMeansOf hf:Carta_example5 .
+}
+
+hf:provenance_cs10 {
+    hf:assertion_cs10 prov:wasGeneratedBy hf:int_act_cs10 . 
+    hf:int_act_cs10 a hico:InterpretationAct ;
+        hico:isExtractedFrom hf:LC_philo_material ;
+        cwrc:hasCertainty cwrc:lowCertainty ;
+        hico:hasInterpretationType mima:Philological ;
+        hico:hasInterpretationCriterion mima:SourcesOrInfluencesDetection  
+}
+
+hf:pubInfo_cs10 {
+    hf:pub_cs10 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs10 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
 }
 
