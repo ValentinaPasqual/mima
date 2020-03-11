@@ -1,5 +1,5 @@
 # MIMA
-## Multi-disciplinary Interpretations model on Manuscript Apparatus
+Multi-disciplinary Interpretations model on Manuscript Apparatus
 
 
 ## The Model
@@ -68,19 +68,16 @@ For example the miniaturist (performing manuscript illustration creation and pro
 
 For these reasons, a production event (represented with the class `crm:E12_Production`) can produce (represented with the property `crm:P108_has_produced`) or the manuscript (represented with the class `crm:E22_Man-Made_Object`) or an illustration (represented with the class `vir:IC1_Iconographical_Atom`) or a textual fragments (represented with the class `tex:TX7_Written_Text_Fragment`). For what concerns textual fragments the production event can be specialised in with class `mima-tex:TX2_Writing`. Respectively for what concerns conceptual aspects of the manuscript, the creation event (represented with the class `crm:E65_Creation`) creates (represented with the property `crm:P94_has_created`) the whole manuscript conceptual meaning (represented with the class `crm:E28_Conceptual_Object`), the illustration representation (represented with the class `vir:IC9_Representation`) and the textual content (represented with the class  `crm:E33_Linguistic_Object`).
 
-![Figure4](model_images/produzione_fisica_vs_concettuale.svg)
+![Figure5](model_images/produzione_fisica_vs_concettuale.svg)
 
 Production and creation events are fundamental to catch disciplines interests. For example the `mima-tex:`TX2_Writing (which is a subclass of `crm:E12_Production`) is the main interest for palaeographical analysis. Philology and iconography are interested in both production and creation events in order to detect influences and sources of the manuscript and its fragments.
 
 #### Hermeneutic analysis: The history narrated by the manuscript 
-Content analysis means first of all to recognise an intellectual aspect expressed by the text or an image included in the manuscript visual and textual physical fragments (as represented in 2.2.1 respectively with the classes vir:IC1_Iconographic_Atom and tex:TX7_Written_Text_Fragment). The hermeneutic act assigns some meaning to the physical fragments (respectively represented as vir:IC9_Representation class and cidoc:E33_Linguistic_Object class).
-In particular, vir allows to express iconographical items as representations and to further annotate portions of them (i.e. class vir:IC10_Attribute). For example, the philology expert, analysing the Ferrara map argues: “la presenza del ponte di San Biagio, costruito nel settembre 1494, costituirebbe il termine ante quem, l’assenza dei ponti di San Giuliano e di San Francesco” (the complete excerpt is shown in CS2). The excerpt expresses that if the map whole representation is depicting Ferrara, such representation is composed by some other entities (i.e. two bridges are two instances of vir:IC10_Attribute). An additional example is “L’illustrazione rappresenta la consegna del manoscritto delle Historiae a Duca Ercole I da parte di Prisciani”, where Duca Ercole I and Prisciani are two instances of vir:IC10_Attribute (cf. complete excerpt in CS7.1).
-Moreover, an instance of vir:IC9_Representation can carry a symbolic meaning (connecting vir:IC9_Representation class through the property crm:P138_represents  to crm:E90_Symbolic_Object). For example the excerpt in CS7.3 expresses that the illustration conveys monumentality.
-Content description is mostly derived from philologic and iconographic analysis performed by experts. Philological studies aim to address iconographic apparatus fragments as means to describe aspects related to some historical events (for example: “L’illustrazione rappresenta la consegna del manoscritto delle Historiae a Duca Ercole I da parte di Prisciani” (cf. excerpt in section 4.2.7 - CS7.1), as well as the excerpt of CS3, section 4.2.3. 	
-Iconographic analysis focuses on representations and their symbolic meanings, which can be compared with other visual works of art (as exemplified in section 4.2.5 - CS5). 
-Lastly, the palaeographic approach focuses on physical aspects of the manuscript, not only related to the conveyed intellectual meaning (see section 4.2.7 - CS7.3). 
-When dealing with written text, the intellectual aspect of the textual physical fragment is identified with the class crm:E33_Linguistic_Object (as expressed in section 4.1.2.1). For instance, consider the scenario in natural language “Nel proemio viene delineata la figura del duca Ercole [...]” .
-The highlighted intellectual aspects (individuals of the classes vir:IC9_Representation or vir:IC10_Attribute) can refer to some real-world object, which are the one described in section 4.1.2.2 and shown in figure 4). Such link is represented through the object property crm:P138_represents. Meanwhile for what concerns crm:E33_Linguistic_Object referring to some real-world objects, the link is represented through the object property crm:P67_refers_to. 
+Content analysis means first of all to recognise an intellectual aspect expressed by the text or an image included in the manuscript visual and textual physical fragments (respectively `vir:IC1_Iconographic_Atom` and `mima-tex:TX7_Written_Text_Fragment`). The hermeneutic act assigns some meaning to the physical fragments (respectively represented as vir:IC9_Representation class and `crm:E33_Linguistic_Object class`).
+In particular, vir allows to express iconographical items as representations and to further annotate portions of them (i.e. class `vir:IC10_Attribute`). 
+Moreover, an instance of `vir:IC9_Representation` can carry a symbolic meaning (connecting `vir:IC9_Representation` class through the property `crm:P138_represents` to `crm:E90_Symbolic_Object`). 
+When dealing with written text, the intellectual aspect of the textual physical fragment is identified with the class `crm:E33_Linguistic_Object`. 
+The highlighted intellectual aspects (individuals of the classes `vir:IC9_Representation` or `vir:IC10_Attribute`) can refer to some real-world object, which has been already described [here](#markdown-header-people,-events,-time-and-places:-dealing-with-actions-in-and-on-the-manuscript)). Such link is represented through the object property crm:P138_represents. Meanwhile for what concerns crm:E33_Linguistic_Object referring to some real-world objects, the link is represented through the object property crm:P67_refers_to. 
 
  
 Figure 6: Model unit representing hermeneutic analysis on illustrations.
