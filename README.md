@@ -1,6 +1,8 @@
 # MIMA
 Multi-disciplinary Interpretations model on Manuscript Apparatus
 
+## The Model
+
 - [MIMA](#mima)
   * [The Model](#the-model)
     + [Level 0: factual data](#level-0--factual-data)
@@ -20,7 +22,6 @@ Multi-disciplinary Interpretations model on Manuscript Apparatus
     + [How levels are connected](#how-levels-are-connected)
 
 
-## The Model
 Here below is the list of prefixes of reused ontologies in MIMA model.
 
 `crm: <http://www.cidoc-crm.org/cidoc-crm/>`
