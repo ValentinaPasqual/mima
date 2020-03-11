@@ -1,6 +1,24 @@
 # MIMA
 Multi-disciplinary Interpretations model on Manuscript Apparatus
 
+- [MIMA](#mima)
+  * [The Model](#the-model)
+    + [Level 0: factual data](#level-0--factual-data)
+    + [The manuscript structure](#the-manuscript-structure)
+      - [Editions](#editions)
+      - [Artefacts related to the manuscript](#artefacts-related-to-the-manuscript)
+    + [First Level: assertion](#first-level--assertion)
+      - [Connecting physical features to their conceptual meaning: manuscripts fragments and their interpretations](#connecting-physical-features-to-their-conceptual-meaning--manuscripts-fragments-and-their-interpretations)
+      - [People, Events, Time and Places: dealing with actions in and on the manuscript](#people--events--time-and-places--dealing-with-actions-in-and-on-the-manuscript)
+        * [A particular focus on creation and production events](#a-particular-focus-on-creation-and-production-events)
+      - [Hermeneutic analysis: The history narrated by the manuscript](#hermeneutic-analysis--the-history-narrated-by-the-manuscript)
+      - [Historical sources and influences between works: The history on the manuscript](#historical-sources-and-influences-between-works--the-history-on-the-manuscript)
+      - [The physical text as object of interest](#the-physical-text-as-object-of-interest)
+    + [Second level: provenance](#second-level--provenance)
+      - [Scholars’ statements as interpretation acts](#scholars--statements-as-interpretation-acts)
+    + [Fourth level: publication information](#fourth-level--publication-information)
+    + [How levels are connected](#how-levels-are-connected)
+
 
 ## The Model
 Here below is the list of prefixes of reused ontologies in MIMA model.
