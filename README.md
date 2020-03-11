@@ -77,10 +77,9 @@ Content analysis means first of all to recognise an intellectual aspect expresse
 In particular, vir allows to express iconographical items as representations and to further annotate portions of them (i.e. class `vir:IC10_Attribute`). 
 Moreover, an instance of `vir:IC9_Representation` can carry a symbolic meaning (connecting `vir:IC9_Representation` class through the property `crm:P138_represents` to `crm:E90_Symbolic_Object`). 
 When dealing with written text, the intellectual aspect of the textual physical fragment is identified with the class `crm:E33_Linguistic_Object`. 
-The highlighted intellectual aspects (individuals of the classes `vir:IC9_Representation` or `vir:IC10_Attribute`) can refer to some real-world object, which has been already described [here](#markdown-header-people,-events,-time-and-places:-dealing-with-actions-in-and-on-the-manuscript)). Such link is represented through the object property crm:P138_represents. Meanwhile for what concerns crm:E33_Linguistic_Object referring to some real-world objects, the link is represented through the object property crm:P67_refers_to. 
+The highlighted intellectual aspects (individuals of the classes `vir:IC9_Representation` or `vir:IC10_Attribute`) can refer to some real-world object, which has been already described [here](#people--events--time-and-places--dealing-with-actions-in-and-on-the-manuscript)). Such link is represented through the object property `crm:P138_represents`. Meanwhile for what concerns `crm:E33_Linguistic_Object` referring to some real-world objects, the link is represented through the object property `crm:P67_refers_to`. 
 
- 
-Figure 6: Model unit representing hermeneutic analysis on illustrations.
+![Figure6](model_images/representation_lingObjs.svg)
 
 #### Historical sources and influences between works: The history on the manuscript
 Information about influences and description of sources of information is a primary topic in our philological source material. However, it is fundamental also for pursuing other types of studies.
