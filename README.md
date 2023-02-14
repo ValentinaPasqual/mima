@@ -1,5 +1,5 @@
 # MIMA
-Multi-disciplinary Interpretations model on Manuscript Apparatus
+Multi-disciplinary Interpretations model on Manuscript Apparatus - DATA MODEL
 
 ## The Model
 
